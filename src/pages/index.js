@@ -107,7 +107,7 @@ const IndexPage = ({ data }) => (
             class="z-0 absolute shadow-none h-40 text-center whitespace-nowrap rounded-xl text-white justify-center bg-gradient-to-r from-green-400 to-blue-500"
           ></div>
           <h3 className="font-bold text-4xl text-white z-10 px-20">
-            0%: Public minting unlocks on November 5th
+            0%: Public minting unlocks on datehere.
           </h3>
         </div>
         <div class="relative overflow-hidden h-40 mb-4 text-xs flex items-center rounded-xl bg-gray-800">
@@ -116,7 +116,7 @@ const IndexPage = ({ data }) => (
             class="z-0 absolute shadow-none h-40 text-center whitespace-nowrap rounded-xl text-white justify-center bg-gradient-to-r from-green-400 to-blue-500"
           ></div>
           <h3 className="font-bold text-4xl text-white z-10 px-20">
-            25%: balls
+            25%: Deck builder dApp.
           </h3>
         </div>
         <div class="relative overflow-hidden h-40 mb-4 text-xs flex items-center rounded-xl bg-gray-800">
@@ -125,7 +125,8 @@ const IndexPage = ({ data }) => (
             class="z-0 absolute shadow-none h-40 text-center whitespace-nowrap rounded-xl text-white justify-center bg-gradient-to-r from-green-400 to-blue-500"
           ></div>
           <h3 className="font-bold text-4xl text-white z-10 px-20">
-            50%: balls
+            50%: Fully playable ranked games with matchmaking system and end of
+            season rewards.
           </h3>
         </div>
         <div class="relative overflow-hidden h-40 mb-4 text-xs flex items-center rounded-xl bg-gray-800">
@@ -134,7 +135,7 @@ const IndexPage = ({ data }) => (
             class="z-0 absolute shadow-none h-40 text-center whitespace-nowrap rounded-xl text-white justify-center bg-gradient-to-r from-green-400 to-blue-500"
           ></div>
           <h3 className="font-bold text-4xl text-white z-10 px-20">
-            75%: balls
+            75%: Staked matches and weekly tournaments with huge prize pools.
           </h3>
         </div>
         <div class="relative overflow-hidden h-40 mb-4 text-xs flex items-center rounded-xl bg-gray-800">
@@ -143,14 +144,15 @@ const IndexPage = ({ data }) => (
             class="z-0 absolute shadow-none h-40 text-center whitespace-nowrap rounded-xl text-white justify-center bg-gradient-to-r from-green-400 to-blue-500"
           ></div>
           <h3 className="font-bold text-4xl text-white z-10 px-20">
-            100%: balls
+            100%: Physical versions of the cards will be made and can be claimed
+            with proof of NFT ownership
           </h3>
         </div>
       </div>
     </section>
     <p class="p-2 md:px-60 md:pb-40 text-gray-600 text-center text-white text-xl">
       <p className="text-gray-400 text-xl mt-12 mb-2">
-        862/1,000 starter packs claimed!
+        862/5,000 starter packs claimed!
       </p>
       <div class="relative overflow-hidden h-2 mb-4 text-xs flex items-center rounded-xl bg-gray-800">
         <div
