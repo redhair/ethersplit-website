@@ -7,7 +7,7 @@ import { injected, walletConnect, walletLink } from "./wallet/connector"
 import { useWeb3React } from "@web3-react/core"
 import { useAccountBalances, getPricesForTokens } from "../hooks/wallet"
 import Header from "./Header"
-import "./layout.css"
+import "./Layout.css"
 
 const Layout = ({ children }) => {
   const { modalContent } = useContext(ModalContext)
