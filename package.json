@@ -1,0 +1,80 @@
+{
+  "name": "ethersplit-website",
+  "private": true,
+  "description": "",
+  "version": "0.3.0",
+  "author": "Thomas Bonanni <tombonanni@gmail.com>",
+  "dependencies": {
+    "@loadable/component": "5.15.0",
+    "@web3-react/core": "6.1.9",
+    "@web3-react/injected-connector": "6.0.7",
+    "@web3-react/walletconnect-connector": "6.2.4",
+    "@web3-react/walletlink-connector": "6.2.5",
+    "autoprefixer": "^10.2.6",
+    "gatsby": "^3.7.1",
+    "gatsby-image": "^3.7.1",
+    "gatsby-plugin-gatsby-cloud": "3.2.0",
+    "gatsby-plugin-google-analytics": "^3.7.1",
+    "gatsby-plugin-image": "^1.7.1",
+    "gatsby-plugin-manifest": "^3.7.1",
+    "gatsby-plugin-offline": "^4.7.1",
+    "gatsby-plugin-postcss": "^4.7.1",
+    "gatsby-plugin-preact": "^5.13.0",
+    "gatsby-plugin-purgecss": "^6.0.2",
+    "gatsby-plugin-react-helmet": "^4.7.1",
+    "gatsby-plugin-sharp": "^3.7.1",
+    "gatsby-source-filesystem": "^3.7.1",
+    "gatsby-source-medium": "^3.13.0",
+    "gatsby-transformer-sharp": "^3.7.1",
+    "node-polyfill-webpack-plugin": "1.1.4",
+    "postcss": "^8.3.4",
+    "preact": "^10.5.14",
+    "preact-render-to-string": "^5.1.19",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-responsive-modal": "4.0.1",
+    "web3": "1.5.2"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "electron": "15.1.2",
+    "ghooks": "^2.0.4",
+    "prettier": "^2.3.1",
+    "tailwindcss": "^2.1.4"
+  },
+  "keywords": [
+    "gatsby",
+    "web3",
+    "nft",
+    "gaming"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redhair/portfolio"
+  },
+  "bugs": {
+    "url": "https://github.com/redhair/portfolio/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run clean && npm run build"
+    }
+  }
+}
