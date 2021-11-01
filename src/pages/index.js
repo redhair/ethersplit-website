@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Button from "../components/Button"
@@ -7,6 +9,18 @@ import Button from "../components/Button"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
+    <div className="flex flex-col justify-center items-center mr-6 text-white">
+      <StaticImage
+        placeholder="none"
+        className="mt-24"
+        loading="eager"
+        src="../images/logo_high.png"
+        alt="Logo"
+      />
+      <Link to="/buy-packs">
+        <Button className="mt-12">Mint Your Starterpack Now</Button>
+      </Link>
+    </div>
     <h1 class="p-2 md:pt-40 md:text-6xl text-center font-bold text-white">
       The most competetive NFT trading card game on Ethereum
     </h1>

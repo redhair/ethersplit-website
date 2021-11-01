@@ -25,10 +25,10 @@ module.exports = {
         name: `EtherSplit`,
         short_name: `ES`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0f1e2c`,
+        theme_color: `#0f1e2c`,
         display: `minimal-ui`,
-        icon: `src/images/logo_white_bg.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon_low.png`, // This path is relative to the root of the site.
       },
     },
     // {

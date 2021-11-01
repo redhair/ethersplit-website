@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
             padding: `0 1.0875rem 1.45rem`,
           }}
         >
-          <Header account={account} siteTitle={data.site.siteMetadata.title} />
+          {/* <Header account={account} siteTitle={data.site.siteMetadata.title} /> */}
           <main>{children}</main>
           <footer class="flex flex-col p-6 mt-12 ">
             <Link class="text-gray-400" to="/">

@@ -10,13 +10,6 @@ function Header({ siteTitle, account }) {
 
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 mb-6 sticky top-0 bg-transparent bg-opacity-60 backdrop-filter backdrop-blur-md">
-      <div className="flex items-center flex-shrink-0 mr-6 text-white">
-        <div style={{ maxWidth: `33px` }}>
-          <Link to={`/`} href="#responsive-header">
-            <StaticImage loading="eager" src="../images/logo.png" alt="Logo" />
-          </Link>
-        </div>
-      </div>
       <div className="block">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
@@ -40,10 +33,9 @@ function Header({ siteTitle, account }) {
         <div className="text-sm lg:flex-grow">
           <Link
             to={`/`}
-            href="#responsive-header"
             className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
           >
-            Contract
+            App
           </Link>
           <Link
             className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
@@ -70,8 +62,18 @@ function Header({ siteTitle, account }) {
             Collection
           </Link>
         </div>
+        {/* <div className="flex items-center flex-shrink-0 mr-6 text-white">
+          <Link to={`/`} href="#responsive-header">
+            <StaticImage
+              loading="eager"
+              src="../images/logo_low.png"
+              alt="Logo"
+              width="250"
+            />
+          </Link>
+        </div> */}
         <div>
-          <a
+          {/* <a
             href="https://github.com/redhair"
             className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-white hover:bg-white lg:mt-0"
           >
@@ -88,7 +90,7 @@ function Header({ siteTitle, account }) {
             className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-white hover:bg-white lg:mt-0"
           >
             Opensea
-          </a>
+          </a> */}
           <button
             onClick={showConnectModal}
             className="rounded-full text-white px-8 py-3 bg-gradient-to-r from-green-500 via-blue-400"
