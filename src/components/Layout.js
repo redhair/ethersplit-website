@@ -27,6 +27,29 @@ const Layout = ({ children }) => {
   return (
     <>
       {modalContent && <Modal>{modalContent}</Modal>}
+      <Helmet>
+        {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script> */}
+        {/* <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `VANTA.FOG({
+            el: "#fog-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x4dff,
+            midtoneColor: 0x6600ff,
+            lowlightColor: 0x378bff,
+            baseColor: 0x151d43,
+            blurFactor: 0.90,
+            speed: 1.50,
+            zoom: 1.70
+          })`,
+          }}
+        ></script> */}
+      </Helmet>
       <div
         style={{
           background: "rgb(2,0,36)",
@@ -42,7 +65,7 @@ const Layout = ({ children }) => {
         >
           {/* <Header account={account} siteTitle={data.site.siteMetadata.title} /> */}
           <main>{children}</main>
-          <footer class="flex flex-col p-6 mt-12 ">
+          {/* <footer class="flex flex-col p-6 mt-12 ">
             <Link class="text-gray-400" to="/">
               Home
             </Link>
@@ -69,7 +92,7 @@ const Layout = ({ children }) => {
             </Link>
             <br />
             <p className="text-gray-400">&copy; ethersplit 2021</p>
-          </footer>
+          </footer> */}
         </div>
       </div>
     </>

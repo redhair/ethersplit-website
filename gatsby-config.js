@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `ethersplit`,
+    title: `EtherSplit`,
     author: `@redhair`,
   },
   plugins: [
