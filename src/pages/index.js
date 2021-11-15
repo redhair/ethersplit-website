@@ -56,7 +56,10 @@ const IndexPage = ({ data }) => {
           <p className="p-2 text-white text-xl text-center">
             Join the most competetive NFT trading card game on Ethereum.
           </p>
-          <Button
+          <Link to="/buy-packs">
+            <Button className="">Mint Your Starterpack Now</Button>
+          </Link>
+          {/* <Button
             onClick={() => {
               window.open("https://discord.gg/FDNGyaK9C6", "_blank") ||
                 window.location.replace("https://discord.gg/FDNGyaK9C6")
@@ -64,7 +67,7 @@ const IndexPage = ({ data }) => {
             className="mb-20 mt-12"
           >
             Join us on Discord
-          </Button>
+          </Button> */}
         </div>
       </div>
       {/*<Layout>

@@ -24,29 +24,37 @@ export function useAccountBalances() {
         {
           address: process.env.GATSBY_STARTERPACK_CONTRACT,
           abi: StarterPackInterface,
+          name: "StarterPack",
         },
         {
           address: process.env.GATSBY_BOOSTERPACK_CONTRACT,
           abi: BoosterPackInterface,
+          name: "BoosterPack",
         },
       ]
 
-      const balances = tokenAddresses.map(async t => {
-        console.log({ t })
-        const tokenInst = await new library.eth.Contract(t.abi, t.address)
-        console.log("FETCHING BALANCE", { account })
-        const balance = await tokenInst.methods.balanceOf(account).call()
+      const balances = await Promise.all(
+        tokenAddresses.map(async t => {
+          console.log({ t })
+          const tokenInst = await new library.eth.Contract(t.abi, t.address)
+          console.log("FETCHING BALANCE", { account })
+          const balance = await tokenInst.methods.balanceOf(account).call()
 
-        console.log({ tokenInst, balance })
+          console.log({ name: t.name, tokenInst, balance })
 
-        return balance
-      })
+          return { name: t.name, amount: balance }
+        })
+      )
       console.log({ balances })
 
       setBalances(balances)
     }
 
-    getBalances()
+    try {
+      getBalances()
+    } catch (err) {
+      console.error(err)
+    }
   }, [active, library, account, balances])
 
   return {

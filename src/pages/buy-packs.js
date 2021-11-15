@@ -9,6 +9,7 @@ import { Modal, ModalContext } from "../components/ModalProvider"
 import { useWeb3React } from "@web3-react/core"
 import { useAccountBalances, getPricesForTokens } from "../hooks/wallet"
 import StarterPackInterface from "../abis/StarterPack.json"
+import packImage from "../images/booster_pack.png"
 
 const BuyPage = ({ data }) => {
   const [starterPackQty, setStarterPackQty] = useState(1)
@@ -55,16 +56,11 @@ const BuyPage = ({ data }) => {
             <h2 className="text-white text-2xl font-bold mb-4">
               Starter Pack - 1st Edition
             </h2>
-            <video
-              src="https://img.rarible.com/prod/video/upload/prod-itemAnimations/0x10daa9f4c0f985430fde4959adb2c791ef2ccf83:10003/640e18ce#t=0.1"
-              autoplay="true"
-              muted
-              playsinline=""
-              loop=""
-              class="rounded-lg mb-4"
-              data-loaded="loaded"
+            <img
+              src={packImage}
+              className="rounded-lg mb-4 z-0"
               style="opacity: 1; position: relative;"
-            ></video>
+            />
             <div className="flex justify-between">
               <p className="text-yellow-500 font-bold text-base">1st Edition</p>
               <p className="text-gray-400 text-base font-normal">x438 Left</p>
@@ -113,16 +109,11 @@ const BuyPage = ({ data }) => {
             <h2 className="text-white text-2xl font-bold mb-4">
               Booster Pack - 1st Edition
             </h2>
-            <video
-              src="https://img.rarible.com/prod/video/upload/prod-itemAnimations/0x10daa9f4c0f985430fde4959adb2c791ef2ccf83:10003/640e18ce#t=0.1"
-              autoplay="true"
-              muted
-              playsinline=""
-              loop=""
-              class="rounded-lg mb-4"
-              data-loaded="loaded"
+            <img
+              src={packImage}
+              className="rounded-lg mb-4 z-0"
               style="opacity: 1; position: relative;"
-            ></video>
+            />
             <div className="flex justify-between">
               <p className="text-yellow-500 font-bold text-base">1st Edition</p>
               <p className="text-gray-400 text-base font-normal">x438 Left</p>
